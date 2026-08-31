@@ -778,3 +778,14 @@ button[data-reiniciar]:hover {
         font-size: 0.9rem;
     }
 }
+/* =========================================
+   CONTROLE DAS TELAS DA HISTÓRIA
+   ========================================= */
+
+.passo {
+    display: none !important;
+}
+
+.passo.ativo {
+    display: block !important;
+}
