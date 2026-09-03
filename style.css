@@ -1,24 +1,15 @@
-/* A JORNADA DO SIMBIONTE PERDIDO - STYLE.CSS */
-
 :root {
   --bg: #020406;
   --bg2: #07101a;
   --card: #0b1118;
-
   --white: #f4f7fb;
   --text: #dce5ee;
   --muted: #aebbc8;
-
   --blue: #38bdf8;
-  --blue2: #0f4c75;
-
   --green: #43ff9a;
   --red: #ff5364;
-
   --border: rgba(56, 189, 248, 0.28);
 }
-
-/* RESET */
 
 * {
   box-sizing: border-box;
@@ -36,10 +27,7 @@ body {
 
   color: var(--white);
 
-  font-family:
-    "Poppins",
-    Arial,
-    sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 
   background:
     radial-gradient(
@@ -59,14 +47,10 @@ body {
 
 body::before {
   content: "";
-
   position: fixed;
   inset: 0;
-
   z-index: -1;
-
   pointer-events: none;
-
   opacity: 0.45;
 
   background:
@@ -79,39 +63,33 @@ body::before {
 }
 
 
-/* ÁREA GERAL */
+/* =========================
+   ÁREA GERAL
+   ========================= */
 
 header,
 main {
   width: min(900px, calc(100% - 30px));
-
   margin: 0 auto;
 }
 
 
-/* CABEÇALHO */
+/* =========================
+   CABEÇALHO
+   ========================= */
 
 header {
   padding-top: 28px;
-
   text-align: center;
 }
 
 header h1 {
   margin: 0 0 18px;
+  color: #fff;
 
-  color: #ffffff;
-
-  font-family:
-    "Creepster",
-    "Poppins",
-    sans-serif;
-
-  font-size:
-    clamp(2rem, 6vw, 3.2rem);
-
+  font-family: "Creepster", "Poppins", sans-serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
   font-weight: 400;
-
   letter-spacing: 0.04em;
 
   text-shadow:
@@ -120,84 +98,68 @@ header h1 {
 }
 
 
-/* STATUS */
+/* =========================
+   STATUS
+   ========================= */
 
 .status {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   flex-wrap: wrap;
 
   gap: 10px 22px;
 
   padding: 13px 18px;
 
-  border:
-    1px solid
-    rgba(56, 189, 248, 0.20);
-
+  border: 1px solid rgba(56, 189, 248, 0.20);
   border-radius: 14px;
 
-  background:
-    rgba(4, 9, 14, 0.82);
+  background: rgba(4, 9, 14, 0.82);
 
   box-shadow:
-    0 10px 30px
-    rgba(0, 0, 0, 0.35);
+    0 10px 30px rgba(0, 0, 0, 0.35);
 
   color: var(--muted);
-
   font-size: 0.9rem;
 }
 
 .status > div,
 .status-item {
   display: inline-flex;
-
   align-items: center;
-
   gap: 6px;
 }
 
 .status span {
-  color: var(--white);
-
+  color: #fff;
   font-weight: 700;
 }
 
 
-/* CONTEÚDO */
+/* =========================
+   CONTEÚDO
+   ========================= */
 
 main {
   padding: 28px 0 60px;
 }
 
 
-/* =================================================
-   PASSOS DA HISTÓRIA
-
-   TODOS ficam escondidos.
-   SOMENTE .passo.ativo aparece.
-   ================================================= */
+/* =========================
+   CENAS
+   ========================= */
 
 .passo {
   display: none !important;
 
   width: 100%;
-
   position: relative;
-
   overflow: hidden;
 
-  padding:
-    clamp(22px, 5vw, 40px);
+  padding: clamp(22px, 5vw, 40px);
 
-  border:
-    1px solid
-    var(--border);
-
+  border: 1px solid var(--border);
   border-radius: 22px;
 
   background:
@@ -208,35 +170,20 @@ main {
     );
 
   box-shadow:
-    0 25px 60px
-    rgba(0, 0, 0, 0.58),
-
-    inset
-    0 1px
-    rgba(255, 255, 255, 0.04);
+    0 25px 60px rgba(0, 0, 0, 0.58),
+    inset 0 1px rgba(255, 255, 255, 0.04);
 }
-
-
-/* SOMENTE A CENA ATIVA */
 
 .passo.ativo {
   display: block !important;
-
-  animation:
-    entradaCena
-    0.45s ease;
+  animation: entradaCena 0.45s ease;
 }
-
-
-/* BRILHO DO CARD */
 
 .passo::before {
   content: "";
 
   position: absolute;
-
   top: 0;
-
   left: 8%;
   right: 8%;
 
@@ -251,113 +198,112 @@ main {
     );
 }
 
-
-/* ANIMAÇÃO ENTRE AS CENAS */
-
 @keyframes entradaCena {
-
   from {
     opacity: 0;
-
-    transform:
-      translateY(14px)
-      scale(0.985);
+    transform: translateY(14px) scale(0.985);
   }
 
   to {
     opacity: 1;
-
-    transform:
-      translateY(0)
-      scale(1);
+    transform: translateY(0) scale(1);
   }
 }
 
 
-/* IMAGENS DAS CENAS */
+/* =========================
+   IMAGENS
+   ========================= */
 
 .passo > img {
-  display: block;
+  display: block !important;
 
   width: 100%;
-
   max-width: 720px;
+  height: 360px;
 
-  max-height: 420px;
-
-  margin:
-    0 auto
-    25px;
+  margin: 0 auto 25px;
 
   object-fit: cover;
 
-  border:
-    1px solid
-    rgba(56, 189, 248, 0.25);
+  /* padrão */
+  object-position: center center;
 
+  border: 1px solid rgba(56, 189, 248, 0.28);
   border-radius: 16px;
 
+  background: #05080c;
+
   box-shadow:
-    0 16px 40px
-    rgba(0, 0, 0, 0.50);
+    0 16px 40px rgba(0, 0, 0, 0.50);
 }
 
 
-/* TÍTULOS */
+/*
+  IMAGENS QUE PRECISAM MOSTRAR
+  MAIS A PARTE DE CIMA
+*/
+
+.passo > img.enquadramento-alto {
+  object-position: center 25%;
+}
+
+
+/*
+  Para as imagens em que queremos
+  subir ainda mais o enquadramento
+*/
+
+.passo > img.enquadramento-bem-alto {
+  object-position: center 15%;
+}
+
+
+/* =========================
+   TEXTOS
+   ========================= */
 
 .passo h2 {
-  margin:
-    0
-    0
-    16px;
+  margin: 0 0 16px;
 
-  color: #ffffff;
+  color: #fff;
 
   font-size:
-    clamp(
-      1.45rem,
-      4vw,
-      2rem
-    );
+    clamp(1.45rem, 4vw, 2rem);
 
   text-shadow:
-    0 0 12px
-    rgba(56, 189, 248, 0.18);
+    0 0 12px rgba(56, 189, 248, 0.18);
 }
 
+.passo h3 {
+  color: var(--green);
 
-/* TEXTOS */
+  margin-top: 25px;
+
+  text-align: center;
+}
 
 .passo p {
-  margin:
-    0
-    0
-    24px;
+  margin: 0 0 24px;
 
   color: var(--text);
 
   font-size: 1rem;
-
   line-height: 1.75;
 }
 
 
-/* BOTÕES */
+/* =========================
+   BOTÕES
+   ========================= */
 
 button {
   appearance: none;
 
   min-height: 48px;
 
-  margin:
-    6px
-    7px
-    6px
-    0;
-
-  padding:
-    12px
-    19px;
+  margin: 6px 7px 6px 0;
+  padding: 12px 19px;
 
   border:
     1px solid
@@ -365,11 +311,10 @@ button {
 
   border-radius: 12px;
 
-  color: #ffffff;
+  color: #fff;
 
   font:
-    700
-    0.94rem
+    700 0.94rem
     "Poppins",
     Arial,
     sans-serif;
@@ -394,12 +339,8 @@ button {
     background 0.2s ease;
 }
 
-
-/* BOTÃO - HOVER */
-
 button:hover {
-  transform:
-    translateY(-2px);
+  transform: translateY(-2px);
 
   border-color:
     rgba(97, 218, 251, 0.90);
@@ -412,23 +353,13 @@ button:hover {
     );
 
   box-shadow:
-    0 12px 28px
-    rgba(0, 0, 0, 0.45),
-
-    0 0 18px
-    rgba(56, 189, 248, 0.13);
+    0 12px 28px rgba(0, 0, 0, 0.45),
+    0 0 18px rgba(56, 189, 248, 0.13);
 }
-
-
-/* BOTÃO - CLICK */
 
 button:active {
-  transform:
-    scale(0.98);
+  transform: scale(0.98);
 }
-
-
-/* BOTÃO - TECLADO */
 
 button:focus-visible {
   outline:
@@ -437,9 +368,6 @@ button:focus-visible {
 
   outline-offset: 3px;
 }
-
-
-/* VOLTAR */
 
 .btn-voltar {
   border-color:
@@ -454,9 +382,6 @@ button:focus-visible {
       #101419
     );
 }
-
-
-/* JOGAR NOVAMENTE */
 
 .btn-inicio {
   border-color:
@@ -483,7 +408,9 @@ button:focus-visible {
 }
 
 
-/* TIPOS DE AÇÕES */
+/* =========================
+   TIPOS DE AÇÃO
+   ========================= */
 
 .acao-simbionte {
   border-color:
@@ -501,11 +428,12 @@ button:focus-visible {
 }
 
 
-/* SVG / ÍCONES */
+/* =========================
+   SVG
+   ========================= */
 
 .icone-jogo {
   width: 20px;
-
   height: 20px;
 
   object-fit: contain;
@@ -515,7 +443,6 @@ button:focus-visible {
 
 .icone-status {
   width: 18px;
-
   height: 18px;
 }
 
@@ -523,26 +450,18 @@ button:focus-visible {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   gap: 8px;
 }
 
-
-/* VENOM NO TOPO */
-
 .venom-topo {
   display: block;
 
   width: 46px;
-
   height: 46px;
 
-  margin:
-    14px
-    auto
-    0;
+  margin: 14px auto 0;
 
   opacity: 0.85;
 
@@ -550,13 +469,14 @@ button:focus-visible {
 }
 
 
-/* CONTROLE DE VOLUME */
+/* =========================
+   VOLUME
+   ========================= */
 
 .controle-volume {
   display: flex;
 
   justify-content: center;
-
   align-items: center;
 
   gap: 9px;
@@ -568,39 +488,32 @@ button:focus-visible {
   font-size: 0.88rem;
 }
 
-.controle-volume
-input[type="range"] {
+.controle-volume input[type="range"] {
   width: 150px;
 
   cursor: pointer;
 
-  accent-color:
-    var(--blue);
+  accent-color: var(--blue);
 }
-
-
-/* O PLAYER DE ÁUDIO NÃO PRECISA APARECER */
 
 audio {
   display: none;
 }
 
 
-/* =================================================
-   TELA DE TRANSFORMAÇÃO
-   ================================================= */
+/* =========================
+   TRANSFORMAÇÃO
+   ========================= */
 
 #transformacao {
   display: none;
 
   position: fixed;
-
   inset: 0;
 
   z-index: 99999;
 
   align-items: center;
-
   justify-content: center;
 
   padding: 30px;
@@ -609,7 +522,7 @@ audio {
     radial-gradient(
       circle,
       #07120d,
-      #000000 70%
+      #000 70%
     );
 }
 
@@ -628,26 +541,21 @@ audio {
     sans-serif;
 
   font-size:
-    clamp(
-      2.4rem,
-      9vw,
-      6rem
-    );
+    clamp(2.4rem, 9vw, 6rem);
 
   font-weight: 400;
 
   letter-spacing: 0.08em;
 
   text-shadow:
-    0 0 12px
-    rgba(67, 255, 154, 0.50),
-
-    0 0 35px
-    rgba(67, 255, 154, 0.20);
+    0 0 12px rgba(67, 255, 154, 0.50),
+    0 0 35px rgba(67, 255, 154, 0.20);
 }
 
 
-/* MODO VENOM */
+/* =========================
+   MODO VENOM
+   ========================= */
 
 body.venom {
   background:
@@ -656,7 +564,6 @@ body.venom {
       rgba(67, 255, 154, 0.16),
       transparent 40%
     ),
-
     linear-gradient(
       145deg,
       #010201,
@@ -670,8 +577,7 @@ body.venom .passo {
     rgba(67, 255, 154, 0.32);
 }
 
-body.venom
-.passo::before {
+body.venom .passo::before {
   background:
     linear-gradient(
       90deg,
@@ -682,7 +588,9 @@ body.venom
 }
 
 
-/* ELEMENTOS ESCONDIDOS */
+/* =========================
+   OUTROS
+   ========================= */
 
 .hidden,
 .oculto,
@@ -690,109 +598,92 @@ body.venom
   display: none !important;
 }
 
-
-/* SELEÇÃO DE TEXTO */
-
 ::selection {
-  color: #ffffff;
+  color: #fff;
 
   background:
     rgba(15, 76, 117, 0.90);
 }
-
-
-/* SCROLL */
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background:
-    var(--bg);
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background:
-    #1d435c;
+  background: #1d435c;
 
   border:
-    2px solid
-    var(--bg);
+    2px solid var(--bg);
 
-  border-radius:
-    999px;
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:
-    #286b94;
+  background: #286b94;
 }
 
 
-/* CELULAR */
+/* =========================
+   CELULAR
+   ========================= */
 
 @media (max-width: 700px) {
 
   header {
-    width:
-      calc(100% - 20px);
-
-    padding-top:
-      18px;
+    width: calc(100% - 20px);
+    padding-top: 18px;
   }
 
   header h1 {
-    font-size:
-      2rem;
+    font-size: 2rem;
   }
 
   .status {
-    gap:
-      8px
-      14px;
-
-    padding:
-      11px
-      12px;
+    gap: 8px 14px;
+    padding: 11px 12px;
   }
 
   main {
-    width:
-      calc(100% - 20px);
-
-    padding-top:
-      20px;
+    width: calc(100% - 20px);
+    padding-top: 20px;
   }
 
   .passo {
-    padding:
-      21px
-      17px;
-
-    border-radius:
-      16px;
+    padding: 21px 17px;
+    border-radius: 16px;
   }
 
   .passo h2 {
-    font-size:
-      1.4rem;
+    font-size: 1.4rem;
   }
 
   .passo p {
-    font-size:
-      0.95rem;
-
-    line-height:
-      1.65;
+    font-size: 0.95rem;
+    line-height: 1.65;
   }
 
   .passo > img {
-    max-height:
-      310px;
+    height: 240px;
+    max-width: 100%;
 
-    border-radius:
-      12px;
+    border-radius: 12px;
+  }
+
+  /*
+    Mantém o enquadramento especial
+    também no celular
+  */
+
+  .passo > img.enquadramento-alto {
+    object-position: center 25%;
+  }
+
+  .passo > img.enquadramento-bem-alto {
+    object-position: center 15%;
   }
 
   button,
@@ -801,12 +692,9 @@ body.venom
 
     width: 100%;
 
-    justify-content:
-      center;
+    justify-content: center;
 
-    margin:
-      8px
-      0;
+    margin: 8px 0;
   }
 
   .controle-volume {
@@ -814,24 +702,17 @@ body.venom
   }
 }
 
-
-/* CELULAR PEQUENO */
-
 @media (max-width: 400px) {
 
   header h1 {
-    font-size:
-      1.7rem;
+    font-size: 1.7rem;
   }
 
   .passo {
-    padding:
-      18px
-      14px;
+    padding: 18px 14px;
   }
 
   .passo p {
-    font-size:
-      0.9rem;
+    font-size: 0.9rem;
   }
 }
