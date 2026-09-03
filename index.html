@@ -2,1609 +2,2010 @@
 <html lang="pt-BR">
 
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Jornada do Simbionte Perdido</title>
 
-<title>
-A Jornada do Simbionte Perdido
-</title>
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 
 <body>
 
-<div id="transformacao">
+  <!-- ==========================================
+       TELA DE TRANSFORMAÇÃO
+       ========================================== -->
 
-<h1 id="fraseVenom"></h1>
+  <div id="transformacao">
+    <h1 id="fraseVenom"></h1>
+  </div>
 
-</div>
 
-<audio id="som"></audio>
+  <!-- ÁUDIO PRINCIPAL -->
 
-<header>
+  <audio id="som"></audio>
 
-<h1>
-🖤 A Jornada do Simbionte Perdido
-</h1>
 
-<div class="status">
+  <!-- ==========================================
+       CABEÇALHO
+       ========================================== -->
 
-<div>
-🧬 Simbiose:
-<span id="nivelSimbiose">
-0%
-</span>
-</div>
+  <header>
 
-<div>
-🔎 Segredos:
-<span id="segredos">
-0
-</span>
-</div>
+    <h1>
+      🖤 A Jornada do Simbionte Perdido
+    </h1>
 
-</div>
+    <div class="status">
 
-</header>
+      <div>
+        🧬 Simbiose:
+        <span id="nivelSimbiose">0%</span>
+      </div>
 
-<main>
+      <div>
+        🔎 Segredos:
+        <span id="segredos">0</span>
+      </div>
 
-<!-- ======================
-CAPÍTULO 1
-BIBLIOTECA
-====================== -->
+    </div>
 
-<section class="passo ativo" id="passo-0">
+  </header>
 
-<img src="imagenbs/biblioteca.jpg">
 
-<h2>
-A Biblioteca Esquecida
-</h2>
+  <!-- ==========================================
+       JOGO
+       ========================================== -->
 
-<p>
+  <main>
 
-Durante uma tarde chuvosa,
-você encontra uma parte da biblioteca
-que ninguém parece visitar.
 
-Entre livros antigos existe um arquivo
-com símbolos estranhos.
+    <!-- ========================================
+         PASSO 0
+         ======================================== -->
 
-Quando toca nele,
-uma sensação gelada percorre seu corpo.
+    <section
+      class="passo ativo"
+      id="passo-0"
+    >
 
-Algo lá dentro parece estar vivo.
+      <img
+        src="imagenbs/biblioteca.jpg"
+        alt="Biblioteca esquecida"
+      >
 
-</p>
+      <h2>
+        A Biblioteca Esquecida
+      </h2>
 
-<button class="btn-proximo" data-proximo="1">
-📖 Abrir o arquivo antigo
-</button>
+      <p>
+        Durante uma tarde chuvosa,
+        você encontra uma parte da biblioteca
+        que ninguém parece visitar.
 
-<button class="btn-proximo" data-proximo="2">
-🔍 Examinar o símbolo estranho
-</button>
+        Entre livros antigos existe um arquivo
+        com símbolos estranhos.
 
-<button class="btn-proximo" data-proximo="3">
-🚪 Ignorar e sair
-</button>
+        Quando toca nele,
+        uma sensação gelada percorre seu corpo.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        Algo lá dentro parece estar vivo.
+      </p>
 
-</section>
+      <button
+        class="btn-proximo"
+        data-proximo="1"
+      >
+        📖 Abrir o arquivo antigo
+      </button>
 
-<!-- ======================
-CARTA
-====================== -->
+      <button
+        class="btn-proximo"
+        data-proximo="2"
+      >
+        🔍 Examinar o símbolo estranho
+      </button>
 
-<section class="passo" id="passo-1">
+      <button
+        class="btn-proximo"
+        data-proximo="3"
+      >
+        🚪 Ignorar e sair
+      </button>
 
-<img src="imagenbs/arquivo.jpg">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<h2>
-O Arquivo Perdido
-</h2>
+    </section>
 
-<p>
 
-Dentro do arquivo existe uma mensagem:
+    <!-- ========================================
+         PASSO 1
+         ======================================== -->
 
-"Se você encontrou isso,
-significa que ele acordou novamente."
+    <section
+      class="passo"
+      id="passo-1"
+    >
 
-Há uma localização marcada.
+      <img
+        src="imagenbs/arquivo.jpg"
+        alt="Arquivo antigo"
+      >
 
-Uma floresta próxima da cidade.
+      <h2>
+        O Arquivo Perdido
+      </h2>
 
-</p>
+      <p>
+        Dentro do arquivo existe uma mensagem:
 
-<button class="btn-proximo" data-proximo="4">
-🧭 Seguir coordenadas
-</button>
+        "Se você encontrou isso,
+        significa que ele acordou novamente."
 
-<button class="btn-proximo" data-proximo="5">
-💻 Copiar dados do computador antigo
-</button>
+        Há uma localização marcada.
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+        Uma floresta próxima da cidade.
+      </p>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="4"
+      >
+        🧭 Seguir coordenadas
+      </button>
 
-</section>
+      <button
+        class="btn-proximo"
+        data-proximo="5"
+      >
+        💻 Copiar dados do computador antigo
+      </button>
 
-<!-- ======================
-SÍMBOLO
-====================== -->
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<section class="passo" id="passo-2">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<img src="imagenbs/fragmento.jpg">
+    </section>
 
-<h2>
-O Fragmento Vivo
-</h2>
 
-<p>
+    <!-- ========================================
+         PASSO 2
+         ======================================== -->
 
-O símbolo começa a se mover.
+    <section
+      class="passo"
+      id="passo-2"
+    >
 
-Você percebe que não é tinta.
+      <img
+        src="imagenbs/fragmento.jpg"
+        alt="Fragmento vivo"
+      >
 
-É uma pequena parte de alguma coisa.
+      <h2>
+        O Fragmento Vivo
+      </h2>
 
-Um fragmento orgânico.
+      <p>
+        O símbolo começa a se mover.
 
-</p>
+        Você percebe que não é tinta.
 
-<button class="btn-proximo" data-proximo="6">
-🧬 Tocar o fragmento
-</button>
+        É uma pequena parte de alguma coisa.
 
-<button class="btn-proximo" data-proximo="4">
-🌲 Procurar respostas
-</button>
+        Um fragmento orgânico.
+      </p>
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="6"
+      >
+        🧬 Tocar o fragmento
+      </button>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="4"
+      >
+        🌲 Procurar respostas
+      </button>
 
-</section>
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<!-- ======================
-IGNORAR
-====================== -->
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<section class="passo" id="passo-3">
+    </section>
 
-<img src="imagenbs/cidade.jpg">
 
-<h2>
-A Voz no Escuro
-</h2>
+    <!-- ========================================
+         PASSO 3
+         ======================================== -->
 
-<p>
+    <section
+      class="passo"
+      id="passo-3"
+    >
 
-Você decide ir embora.
+      <img
+        src="imagenbs/cidade.jpg"
+        alt="Cidade durante a noite"
+      >
 
-Mas naquela noite,
-quando tudo está silencioso...
+      <h2>
+        A Voz no Escuro
+      </h2>
 
-uma voz aparece.
+      <p>
+        Você decide ir embora.
 
-"Nós esperamos."
+        Mas naquela noite,
+        quando tudo está silencioso...
 
-</p>
+        uma voz aparece.
 
-<button class="btn-proximo" data-proximo="4">
-👁️ Voltar para investigar
-</button>
+        "Nós esperamos."
+      </p>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="4"
+      >
+        👁️ Voltar para investigar
+      </button>
 
-</section>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<!-- ======================
-FLORESTA
-====================== -->
+    </section>
 
-<section class="passo" id="passo-4">
 
-<img src="imagenbs/floresta.jpg">
+    <!-- ========================================
+         PASSO 4
+         ======================================== -->
 
-<h2>
-A Floresta Sem Nome
-</h2>
+    <section
+      class="passo"
+      id="passo-4"
+    >
 
-<p>
+      <img
+        src="imagenbs/floresta.jpg"
+        alt="Floresta misteriosa"
+      >
 
-Seguindo as coordenadas,
-você chega em uma floresta que não aparece
-em nenhum mapa.
+      <h2>
+        A Floresta Sem Nome
+      </h2>
 
-As árvores parecem antigas demais.
+      <p>
+        Seguindo as coordenadas,
+        você chega em uma floresta que não aparece
+        em nenhum mapa.
 
-No chão existem marcas estranhas,
-como se algo pesado tivesse passado por ali.
+        As árvores parecem antigas demais.
 
-Entre as folhas existe uma entrada escondida.
+        No chão existem marcas estranhas,
+        como se algo pesado tivesse passado por ali.
 
-</p>
+        Entre as folhas existe uma entrada escondida.
+      </p>
 
-<button class="btn-proximo" data-proximo="7">
-🚇 Entrar no túnel secreto
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="7"
+      >
+        🚇 Entrar no túnel secreto
+      </button>
 
-<button class="btn-proximo" data-proximo="8">
-👁️ Seguir as marcas no chão
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="8"
+      >
+        👁️ Seguir as marcas no chão
+      </button>
 
-<button class="btn-proximo" data-proximo="9">
-🏃 Voltar para a cidade
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="9"
+      >
+        🏃 Voltar para a cidade
+      </button>
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-</section>
+    </section>
 
-<!-- ======================
-COMPUTADOR ANTIGO
-====================== -->
 
-<section class="passo" id="passo-5">
+    <!-- ========================================
+         PASSO 5
+         ======================================== -->
 
-<img src="imagenbs/computador.jpg">
+    <section
+      class="passo"
+      id="passo-5"
+    >
 
-<h2>
-O Computador Abandonado
-</h2>
+      <img
+        src="imagenbs/computador.jpg"
+        alt="Computador antigo"
+      >
 
-<p>
+      <h2>
+        O Computador Abandonado
+      </h2>
 
-O computador ainda funciona.
+      <p>
+        O computador ainda funciona.
 
-Na tela aparece:
+        Na tela aparece:
 
-"PROJETO SIMBIOSE - ACESSO NEGADO"
+        "PROJETO SIMBIOSE - ACESSO NEGADO"
 
-Você encontra três arquivos:
+        Você encontra três arquivos:
 
-ARQUIVO 001
-ARQUIVO 002
-ARQUIVO FINAL
+        ARQUIVO 001
+        ARQUIVO 002
+        ARQUIVO FINAL
+      </p>
 
-</p>
+      <button
+        class="btn-proximo"
+        data-proximo="10"
+      >
+        📁 Abrir Arquivo 001
+      </button>
 
-<button class="btn-proximo" data-proximo="10">
-📁 Abrir Arquivo 001
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="11"
+      >
+        🔐 Tentar senha secreta
+      </button>
 
-<button class="btn-proximo" data-proximo="11">
-🔐 Tentar senha secreta
-</button>
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    </section>
 
-</section>
 
-<!-- ======================
-FRAGMENTO
-====================== -->
+    <!-- ========================================
+         PASSO 6
+         ======================================== -->
 
-<section class="passo" id="passo-6">
+    <section
+      class="passo"
+      id="passo-6"
+    >
 
-<img src="imagenbs/simbionte.jpg">
+      <img
+        src="imagenbs/simbionte.jpg"
+        class="enquadramento-bem-alto"
+        alt="Simbionte"
+      >
 
-<h2>
-O Primeiro Contato
-</h2>
+      <h2>
+        O Primeiro Contato
+      </h2>
 
-<p>
+      <p>
+        Assim que toca o fragmento,
+        ele reage.
 
-Assim que toca o fragmento,
-ele reage.
+        Uma substância negra começa a se mover
+        pelo chão.
 
-Uma substância negra começa a se mover
-pelo chão.
+        Uma voz surge na sua mente:
 
-Uma voz surge na sua mente:
+        "Você nos encontrou..."
 
-"Você nos encontrou..."
+        "Finalmente."
+      </p>
 
-"Finalmente."
+      <button
+        class="btn-proximo aceitarVenom"
+        data-proximo="12"
+      >
+        🖤 Aceitar o simbionte
+      </button>
 
-</p>
+      <button
+        class="btn-proximo"
+        data-proximo="13"
+      >
+        🔥 Destruir o fragmento
+      </button>
 
-<button class="btn-proximo aceitarVenom" data-proximo="12">
-🖤 Aceitar o simbionte
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="14"
+      >
+        🚪 Fugir
+      </button>
 
-<button class="btn-proximo" data-proximo="13">
-🔥 Destruir o fragmento
-</button>
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<button class="btn-proximo" data-proximo="14">
-🚪 Fugir
-</button>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+    </section>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
 
-</section>
+    <!-- ========================================
+         PASSO 7
+         ======================================== -->
 
-<!-- ======================
-TÚNEL
-====================== -->
+    <section
+      class="passo"
+      id="passo-7"
+    >
 
-<section class="passo" id="passo-7">
+      <img
+        src="imagenbs/tunel.jpg"
+        alt="Túnel subterrâneo"
+      >
 
-<img src="imagenbs/tunel.jpg">
+      <h2>
+        O Túnel Subterrâneo
+      </h2>
 
-<h2>
-O Túnel Subterrâneo
-</h2>
+      <p>
+        O túnel parece ter sido construído
+        para esconder algo.
 
-<p>
+        Nas paredes existem símbolos iguais
+        aos do livro.
 
-O túnel parece ter sido construído
-para esconder algo.
+        Quanto mais você anda,
+        mais escuta uma respiração.
 
-Nas paredes existem símbolos iguais
-aos do livro.
+        Mas não existe ninguém ali.
+      </p>
 
-Quanto mais você anda,
-mais escuta uma respiração.
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🧪 Continuar até o laboratório
+      </button>
 
-Mas não existe ninguém ali.
+      <button
+        class="btn-proximo"
+        data-proximo="16"
+      >
+        🔦 Investigar uma porta estranha
+      </button>
 
-</p>
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<button class="btn-proximo" data-proximo="15">
-🧪 Continuar até o laboratório
-</button>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<button class="btn-proximo" data-proximo="16">
-🔦 Investigar uma porta estranha
-</button>
+    </section>
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    <!-- ========================================
+         PASSO 8 - CRIATURA
+         ======================================== -->
 
-</section>
+    <section
+      class="passo"
+      id="passo-8"
+    >
 
-<!-- ======================
-CRIATURA
-====================== -->
+      <img
+        src="imagenbs/simbionte.jpg"
+        class="enquadramento-bem-alto"
+        alt="Criatura da floresta"
+      >
 
-<section class="passo" id="passo-8">
+      <h2>
+        A Criatura da Floresta
+      </h2>
 
-<img src="imagenbs/criatura.jpg">
+      <p>
+        Você encontra uma criatura desconhecida.
 
-<h2>
-A Criatura da Floresta
-</h2>
+        Ela não parece querer atacar.
 
-<p>
+        Ela observa você.
 
-Você encontra uma criatura desconhecida.
+        Como se estivesse esperando uma escolha.
+      </p>
 
-Ela não parece querer atacar.
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🤝 Seguir a criatura
+      </button>
 
-Ela observa você.
+      <button
+        class="btn-proximo"
+        data-proximo="14"
+      >
+        🏃 Fugir
+      </button>
 
-Como se estivesse esperando uma escolha.
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-</p>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<button class="btn-proximo" data-proximo="15">
-🤝 Seguir a criatura
-</button>
+    </section>
 
-<button class="btn-proximo" data-proximo="14">
-🏃 Fugir
-</button>
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+    <!-- ========================================
+         PASSO 9
+         ======================================== -->
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    <section
+      class="passo"
+      id="passo-9"
+    >
 
-</section>
+      <img
+        src="imagenbs/cidade.jpg"
+        alt="Cidade abandonada"
+      >
 
-<!-- ======================
-CIDADE
-====================== -->
+      <h2>
+        A Cidade Abandonada
+      </h2>
 
-<section class="passo" id="passo-9">
+      <p>
+        Você volta para a cidade.
 
-<img src="imagenbs/cidade.jpg">
+        Mas percebe que tudo parece diferente.
 
-<h2>
-A Cidade Abandonada
-</h2>
+        Os postes piscam.
 
-<p>
+        As telas mostram uma mensagem:
 
-Você volta para a cidade.
+        "ELE ESTÁ MAIS PERTO."
+      </p>
 
-Mas percebe que tudo parece diferente.
+      <button
+        class="btn-proximo"
+        data-proximo="5"
+      >
+        💻 Procurar computadores
+      </button>
 
-Os postes piscam.
+      <button
+        class="btn-proximo"
+        data-proximo="17"
+      >
+        📡 Seguir o sinal misterioso
+      </button>
 
-As telas mostram uma mensagem:
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-"ELE ESTÁ MAIS PERTO."
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-</p>
+    </section>
 
-<button class="btn-proximo" data-proximo="5">
-💻 Procurar computadores
-</button>
 
-<button class="btn-proximo" data-proximo="17">
-📡 Seguir o sinal misterioso
-</button>
+    <!-- ========================================
+         PASSO 10
+         ======================================== -->
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+    <section
+      class="passo"
+      id="passo-10"
+    >
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <img
+        src="imagenbs/arquivo.jpg"
+        alt="Arquivo do Projeto Simbiose"
+      >
 
-</section>
+      <h2>
+        Arquivo 001 - Projeto Simbiose
+      </h2>
 
-<!-- ======================
-ARQUIVO 001
-====================== -->
+      <p>
+        O arquivo revela uma gravação antiga.
 
-<section class="passo" id="passo-10">
+        "Dia 42.
 
-<img src="imagenbs/arquivo.jpg">
+        O organismo encontrado fora da Terra
+        não é uma ameaça.
 
-<h2>
-Arquivo 001 - Projeto Simbiose
-</h2>
+        Ele aprende.
 
-<p>
+        Ele sente.
 
-O arquivo revela uma gravação antiga.
+        Ele escolhe."
 
-"Dia 42.
+        No final da mensagem existe um aviso:
 
-O organismo encontrado fora da Terra
-não é uma ameaça.
+        "Nunca deixe ele encontrar alguém compatível."
+      </p>
 
-Ele aprende.
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🧪 Procurar o laboratório
+      </button>
 
-Ele sente.
+      <button
+        class="btn-proximo"
+        data-proximo="18"
+      >
+        📂 Abrir o arquivo proibido
+      </button>
 
-Ele escolhe."
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-No final da mensagem existe um aviso:
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-"Nunca deixe ele encontrar alguém compatível."
+    </section>
 
-</p>
 
-<button class="btn-proximo" data-proximo="15">
-🧪 Procurar o laboratório
-</button>
+    <!-- ========================================
+         PASSO 11
+         ======================================== -->
 
-<button class="btn-proximo" data-proximo="18">
-📂 Abrir o arquivo proibido
-</button>
+    <section
+      class="passo"
+      id="passo-11"
+    >
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+      <img
+        src="imagenbs/computador.jpg"
+        alt="Sistema bloqueado"
+      >
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <h2>
+        Sistema Bloqueado
+      </h2>
 
-</section>
+      <p>
+        O computador pede uma senha.
 
-<!-- ======================
-SENHA SECRETA
-====================== -->
+        Na tela aparece uma dica:
 
-<section class="passo" id="passo-11">
+        "Aquilo que vive nas sombras
+        sempre retorna."
 
-<img src="imagenbs/computador.jpg">
+        Talvez exista uma palavra escondida.
+      </p>
 
-<h2>
-Sistema Bloqueado
-</h2>
+      <button
+        class="btn-proximo"
+        data-proximo="19"
+      >
+        ⌨️ Digitar VENOM
+      </button>
 
-<p>
+      <button
+        class="btn-proximo"
+        data-proximo="18"
+      >
+        🔓 Tentar outro acesso
+      </button>
 
-O computador pede uma senha.
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-Na tela aparece uma dica:
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-"Aquilo que vive nas sombras
-sempre retorna."
+    </section>
 
-Talvez exista uma palavra escondida.
 
-</p>
+    <!-- ========================================
+         PASSO 12 - VENOM
+         ======================================== -->
 
-<button class="btn-proximo" data-proximo="19">
-⌨️ Digitar VENOM
-</button>
+    <section
+      class="passo"
+      id="passo-12"
+    >
 
-<button class="btn-proximo" data-proximo="18">
-🔓 Tentar outro acesso
-</button>
+      <img
+        src="imagenbs/venom.jpg"
+        class="enquadramento-bem-alto"
+        alt="Venom"
+      >
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+      <h2>
+        A Escolha do Simbionte
+      </h2>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <p>
+        A criatura se aproxima.
 
-</section>
+        Você sente medo.
 
-<!-- ======================
-ACEITAR VENOM
-====================== -->
+        Mas também sente que ela está sozinha.
 
-<section class="passo" id="passo-12">
+        A voz retorna:
 
-<img src="imagenbs/venom.jpg">
+        "Não queremos destruir você."
 
-<h2>
-A Escolha do Simbionte
-</h2>
+        "Queremos completar você."
 
-<p>
+        O simbionte toca sua mão.
+      </p>
 
-A criatura se aproxima.
+      <button
+        class="btn-proximo transformar"
+        data-proximo="20"
+      >
+        🖤 Aceitar a união
+      </button>
 
-Você sente medo.
+      <button
+        class="btn-proximo"
+        data-proximo="13"
+      >
+        🔥 Rejeitar o vínculo
+      </button>
 
-Mas também sente que ela está sozinha.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-A voz retorna:
+    </section>
 
-"Não queremos destruir você."
 
-"Queremos completar você."
+    <!-- ========================================
+         PASSO 13
+         ======================================== -->
 
-O simbionte toca sua mão.
+    <section
+      class="passo"
+      id="passo-13"
+    >
 
-</p>
+      <img
+        src="imagenbs/computador.jpg"
+        alt="Erro no sistema"
+      >
 
-<button class="btn-proximo transformar" data-proximo="20">
-🖤 Aceitar a união
-</button>
+      <h2>
+        Erro no Sistema
+      </h2>
 
-<button class="btn-proximo" data-proximo="13">
-🔥 Rejeitar o vínculo
-</button>
+      <p>
+        Você tenta destruir o fragmento.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        Mas ele reage.
 
-</section>
+        As luzes começam a piscar.
 
-<!-- ======================
-DESTRUIR FRAGMENTO
-====================== -->
+        O computador mostra:
 
-<section class="passo" id="passo-13">
+        "COMPATIBILIDADE DETECTADA."
 
-<img src="imagenbs/erro.jpg">
+        "USUÁRIO IDENTIFICADO."
+      </p>
 
-<h2>
-Erro no Sistema
-</h2>
+      <button
+        class="btn-proximo"
+        data-proximo="14"
+      >
+        🚪 Fugir imediatamente
+      </button>
 
-<p>
+      <button
+        class="btn-proximo"
+        data-proximo="12"
+      >
+        🧬 Reconsiderar a escolha
+      </button>
 
-Você tenta destruir o fragmento.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-Mas ele reage.
+    </section>
 
-As luzes começam a piscar.
 
-O computador mostra:
+    <!-- ========================================
+         PASSO 14
+         ======================================== -->
 
-"COMPATIBILIDADE DETECTADA."
+    <section
+      class="passo"
+      id="passo-14"
+    >
 
-"USUÁRIO IDENTIFICADO."
+      <img
+        src="imagenbs/tunel.jpg"
+        alt="Fuga pelo túnel"
+      >
 
-</p>
+      <h2>
+        A Fuga
+      </h2>
 
-<button class="btn-proximo" data-proximo="14">
-🚪 Fugir imediatamente
-</button>
+      <p>
+        Você corre pelo túnel.
 
-<button class="btn-proximo" data-proximo="12">
-🧬 Reconsiderar a escolha
-</button>
+        Mas algo corre junto.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        Uma sombra acompanha seus passos.
 
-</section>
+        Quando olha para trás...
 
-<!-- ======================
-FUGIR
-====================== -->
+        não existe ninguém.
 
-<section class="passo" id="passo-14">
+        Apenas uma marca negra na parede.
+      </p>
 
-<img src="imagenbs/tunel.jpg">
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🧪 Continuar explorando
+      </button>
 
-<h2>
-A Fuga
-</h2>
+      <button
+        class="btn-proximo"
+        data-proximo="0"
+      >
+        🏠 Voltar para casa
+      </button>
 
-<p>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-Você corre pelo túnel.
+    </section>
 
-Mas algo corre junto.
 
-Uma sombra acompanha seus passos.
+    <!-- ========================================
+         PASSO 15
+         ======================================== -->
 
-Quando olha para trás...
+    <section
+      class="passo"
+      id="passo-15"
+    >
 
-não existe ninguém.
+      <img
+        src="imagenbs/laboratorio.jpg"
+        alt="Laboratório subterrâneo"
+      >
 
-Apenas uma marca negra na parede.
+      <h2>
+        Laboratório Subterrâneo
+      </h2>
 
-</p>
+      <p>
+        Finalmente você encontra o laboratório.
 
-<button class="btn-proximo" data-proximo="15">
-🧪 Continuar explorando
-</button>
+        Tanques quebrados estão espalhados.
 
-<button class="btn-proximo" data-proximo="0">
-🏠 Voltar para casa
-</button>
+        Papéis mostram experimentos.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        No centro existe um tanque ainda funcionando.
 
-</section>
+        Dentro dele...
 
-<!-- ======================
-LABORATÓRIO
-====================== -->
+        algo se move.
+      </p>
 
-<section class="passo" id="passo-15">
+      <button
+        class="btn-proximo"
+        data-proximo="21"
+      >
+        🖤 Abrir o tanque secreto
+      </button>
 
-<img src="imagenbs/laboratorio.jpg">
+      <button
+        class="btn-proximo"
+        data-proximo="22"
+      >
+        💻 Acessar o computador principal
+      </button>
 
-<h2>
-Laboratório Subterrâneo
-</h2>
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<p>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-Finalmente você encontra o laboratório.
+    </section>
 
-Tanques quebrados estão espalhados.
 
-Papéis mostram experimentos.
+    <!-- ========================================
+         PASSO 16
+         ======================================== -->
 
-No centro existe um tanque ainda funcionando.
+    <section
+      class="passo"
+      id="passo-16"
+    >
 
-Dentro dele...
+      <img
+        src="imagenbs/fotosegredo.jpg"
+        class="enquadramento-alto"
+        alt="Sala escondida"
+      >
 
-algo se move.
+      <h2>
+        A Sala Escondida
+      </h2>
 
-</p>
+      <p>
+        Atrás da porta existe uma sala secreta.
 
-<button class="btn-proximo" data-proximo="21">
-🖤 Abrir o tanque secreto
-</button>
+        Nas paredes existem fotos.
 
-<button class="btn-proximo" data-proximo="22">
-💻 Acessar o computador principal
-</button>
+        Todas mostram a mesma criatura.
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+        Mas em uma delas...
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        ela está ao lado de uma pessoa.
+      </p>
 
-</section>
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🧪 Ir ao laboratório
+      </button>
 
-<!-- ======================
-PORTA ESTRANHA
-====================== -->
+      <button
+        class="btn-proximo"
+        data-proximo="23"
+      >
+        📸 Investigar a foto antiga
+      </button>
 
-<section class="passo" id="passo-16">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<img src="imagenbs/segredo.jpg">
+    </section>
 
-<h2>
-A Sala Escondida
-</h2>
 
-<p>
+    <!-- ========================================
+         PASSO 17
+         ======================================== -->
 
-Atrás da porta existe uma sala secreta.
+    <section
+      class="passo"
+      id="passo-17"
+    >
 
-Nas paredes existem fotos.
+      <img
+        src="imagenbs/cidade.jpg"
+        alt="Sinal desconhecido"
+      >
 
-Todas mostram a mesma criatura.
+      <h2>
+        O Sinal Desconhecido
+      </h2>
 
-Mas em uma delas...
+      <p>
+        O sinal leva você até uma área abandonada
+        da cidade.
 
-ela está ao lado de uma pessoa.
+        Todas as telas começam a ligar ao mesmo tempo.
 
-</p>
+        Uma mensagem aparece:
 
-<button class="btn-proximo" data-proximo="15">
-🧪 Ir ao laboratório
-</button>
+        "NÃO É ELE QUE ESTÁ PROCURANDO VOCÊ."
 
-<button class="btn-proximo" data-proximo="23">
-📸 Investigar a foto antiga
-</button>
+        "É VOCÊ QUE ESTÁ PROCURANDO ELE."
+      </p>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🧪 Seguir o sinal até o laboratório
+      </button>
 
-</section>
+      <button
+        class="btn-proximo"
+        data-proximo="24"
+      >
+        📡 Rastrear a origem do sinal
+      </button>
 
-<!-- ======================
-SINAL MISTERIOSO
-====================== -->
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<section class="passo" id="passo-17">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<img src="imagenbs/cidade.jpg">
+    </section>
 
-<h2>
-O Sinal Desconhecido
-</h2>
 
-<p>
+    <!-- ========================================
+         PASSO 18
+         ======================================== -->
 
-O sinal leva você até uma área abandonada
-da cidade.
+    <section
+      class="passo"
+      id="passo-18"
+    >
 
-Todas as telas começam a ligar ao mesmo tempo.
+      <img
+        src="imagenbs/arquivo.jpg"
+        alt="Arquivo proibido"
+      >
 
-Uma mensagem aparece:
+      <h2>
+        Arquivo Proibido
+      </h2>
 
-"NÃO É ELE QUE ESTÁ PROCURANDO VOCÊ."
+      <p>
+        O arquivo estava escondido por um motivo.
 
-"É VOCÊ QUE ESTÁ PROCURANDO ELE."
+        Ele revela a verdadeira origem.
 
-</p>
+        O simbionte não chegou para invadir.
 
-<button class="btn-proximo" data-proximo="15">
-🧪 Seguir o sinal até o laboratório
-</button>
+        Ele fugiu.
 
-<button class="btn-proximo" data-proximo="24">
-📡 Rastrear a origem do sinal
-</button>
+        Estava sendo usado como experimento.
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+        A criatura só queria encontrar alguém
+        que pudesse confiar.
+      </p>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🧪 Procurar o laboratório
+      </button>
 
-</section>
+      <button
+        class="btn-proximo"
+        data-proximo="25"
+      >
+        📖 Ler o último registro
+      </button>
 
-<!-- ======================
-ARQUIVO PROIBIDO
-====================== -->
+      <button class="btn-voltar">
+        ⬅ Voltar
+      </button>
 
-<section class="passo" id="passo-18">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<img src="imagenbs/arquivo.jpg">
+    </section>
 
-<h2>
-Arquivo Proibido
-</h2>
 
-<p>
+    <!-- ========================================
+         PASSO 19
+         ======================================== -->
 
-O arquivo estava escondido por um motivo.
+    <section
+      class="passo"
+      id="passo-19"
+    >
 
-Ele revela a verdadeira origem.
+      <img
+        src="imagenbs/computador.jpg"
+        alt="Senha correta"
+      >
 
-O simbionte não chegou para invadir.
+      <h2>
+        A Senha Correta
+      </h2>
 
-Ele fugiu.
+      <p>
+        Você digita:
 
-Estava sendo usado como experimento.
+        VENOM
 
-A criatura só queria encontrar alguém
-que pudesse confiar.
+        A tela fica preta.
 
-</p>
+        Por alguns segundos nada acontece.
 
-<button class="btn-proximo" data-proximo="15">
-🧪 Procurar o laboratório
-</button>
+        Então aparece:
 
-<button class="btn-proximo" data-proximo="25">
-📖 Ler o último registro
-</button>
+        "COMPATIBILIDADE: 100%"
 
-<button class="btn-voltar">
-⬅ Voltar
-</button>
+        "USUÁRIO ACEITO."
+      </p>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="12"
+      >
+        🖤 Encontrar o simbionte
+      </button>
 
-</section>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<!-- ======================
-SENHA VENOM
-====================== -->
+    </section>
 
-<section class="passo" id="passo-19">
 
-<img src="imagenbs/computador.jpg">
+    <!-- ========================================
+         PASSO 20
+         ======================================== -->
 
-<h2>
-A Senha Correta
-</h2>
+    <section
+      class="passo"
+      id="passo-20"
+    >
 
-<p>
+      <img
+        src="imagenbs/simbionte.jpg"
+        class="enquadramento-bem-alto"
+        alt="União com o simbionte"
+      >
 
-Você digita:
+      <h2>
+        A União
+      </h2>
 
-VENOM
+      <p>
+        O simbionte envolve seu corpo.
 
-A tela fica preta.
+        Você sente medo.
 
-Por alguns segundos nada acontece.
+        Depois sente força.
 
-Então aparece:
+        Memórias que não são suas
+        começam a aparecer.
 
-"COMPATIBILIDADE: 100%"
+        Uma voz surge:
 
-"USUÁRIO ACEITO."
+        "Agora somos dois."
 
-</p>
+        "Mas também somos um."
+      </p>
 
-<button class="btn-proximo" data-proximo="12">
-🖤 Encontrar o simbionte
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="26"
+      >
+        🖤 Explorar os novos poderes
+      </button>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="27"
+      >
+        🧠 Tentar controlar o simbionte
+      </button>
 
-</section>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<!-- ======================
-TRANSFORMAÇÃO
-====================== -->
+    </section>
 
-<section class="passo" id="passo-20">
 
-<img src="imagenbs/simbionte.jpg">
+    <!-- ========================================
+         PASSO 21
+         ======================================== -->
 
-<h2>
-A União
-</h2>
+    <section
+      class="passo"
+      id="passo-21"
+    >
 
-<p>
+      <img
+        src="imagenbs/laboratorio.jpg"
+        alt="Tanque secreto"
+      >
 
-O simbionte envolve seu corpo.
+      <h2>
+        O Tanque Secreto
+      </h2>
 
-Você sente medo.
+      <p>
+        Você abre o tanque.
 
-Depois sente força.
+        A substância negra desperta.
 
-Memórias que não são suas
-começam a aparecer.
+        Ela se move rapidamente.
 
-Uma voz surge:
+        Não como uma máquina.
 
-"Agora somos dois."
+        Como um ser vivo.
 
-"Mas também somos um."
+        Ela reconhece você.
+      </p>
 
-</p>
+      <button
+        class="btn-proximo"
+        data-proximo="20"
+      >
+        🖤 Aceitar a ligação
+      </button>
 
-<button class="btn-proximo" data-proximo="26">
-🖤 Explorar os novos poderes
-</button>
+      <button
+        class="btn-proximo"
+        data-proximo="28"
+      >
+        🚨 Fechar o tanque novamente
+      </button>
 
-<button class="btn-proximo" data-proximo="27">
-🧠 Tentar controlar o simbionte
-</button>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    </section>
 
-</section>
 
-<!-- ======================
-TANQUE SECRETO
-====================== -->
+    <!-- ========================================
+         PASSO 22
+         ======================================== -->
 
-<section class="passo" id="passo-21">
+    <section
+      class="passo"
+      id="passo-22"
+    >
 
-<img src="imagenbs/laboratorio.jpg">
+      <img
+        src="imagenbs/computador.jpg"
+        alt="Computador principal"
+      >
 
-<h2>
-O Tanque Secreto
-</h2>
+      <h2>
+        Computador Principal
+      </h2>
 
-<p>
+      <p>
+        O sistema possui milhares de arquivos.
 
-Você abre o tanque.
+        Um deles chama atenção:
 
-A substância negra desperta.
+        "SUJEITO FINAL"
 
-Ela se move rapidamente.
+        Ao abrir, aparece uma gravação.
+      </p>
 
-Não como uma máquina.
+      <button
+        class="btn-proximo"
+        data-proximo="25"
+      >
+        ▶ Assistir gravação
+      </button>
 
-Como um ser vivo.
+      <button
+        class="btn-proximo"
+        data-proximo="29"
+      >
+        🔓 Liberar todos os arquivos
+      </button>
 
-Ela reconhece você.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-</p>
+    </section>
 
-<button class="btn-proximo" data-proximo="20">
-🖤 Aceitar a ligação
-</button>
 
-<button class="btn-proximo" data-proximo="28">
-🚨 Fechar o tanque novamente
-</button>
+    <!-- ========================================
+         PASSO 23 - FOTO
+         ======================================== -->
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    <section
+      class="passo"
+      id="passo-23"
+    >
 
-</section>
+      <img
+        src="imagenbs/fotosegredo.jpg"
+        class="enquadramento-alto"
+        alt="Foto perdida"
+      >
 
-<!-- ======================
-COMPUTADOR PRINCIPAL
-====================== -->
+      <h2>
+        A Foto Perdida
+      </h2>
 
-<section class="passo" id="passo-22">
+      <p>
+        Na foto existe uma pessoa junto ao simbionte.
 
-<img src="imagenbs/computador.jpg">
+        Atrás está escrito:
 
-<h2>
-Computador Principal
-</h2>
+        "Primeiro hospedeiro compatível."
 
-<p>
+        Você percebe que o experimento já aconteceu antes.
+      </p>
 
-O sistema possui milhares de arquivos.
+      <button
+        class="btn-proximo"
+        data-proximo="25"
+      >
+        📖 Descobrir a verdade
+      </button>
 
-Um deles chama atenção:
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-"SUJEITO FINAL"
+    </section>
 
-Ao abrir, aparece uma gravação.
 
-</p>
+    <!-- ========================================
+         PASSO 24
+         ======================================== -->
 
-<button class="btn-proximo" data-proximo="25">
-▶ Assistir gravação
-</button>
+    <section
+      class="passo"
+      id="passo-24"
+    >
 
-<button class="btn-proximo" data-proximo="29">
-🔓 Liberar todos os arquivos
-</button>
+      <img
+        src="imagenbs/fragmento.jpg"
+        alt="Origem do sinal"
+      >
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <h2>
+        A Origem
+      </h2>
 
-</section>
+      <p>
+        O sinal vem de uma estrutura escondida.
 
-<!-- ======================
-FOTO ANTIGA
-====================== -->
+        Um portal.
 
-<section class="passo" id="passo-23">
+        Ele parece uma mistura de tecnologia
+        com algo vivo.
 
-<img src="imagenbs/fotosegredo.jpg">
+        O laboratório não criou o simbionte.
 
-<h2>
-A Foto Perdida
-</h2>
+        Apenas encontrou uma passagem.
+      </p>
 
-<p>
+      <button
+        class="btn-proximo"
+        data-proximo="30"
+      >
+        🌀 Abrir o portal
+      </button>
 
-Na foto existe uma pessoa junto ao simbionte.
+      <button
+        class="btn-proximo"
+        data-proximo="15"
+      >
+        🧪 Voltar ao laboratório
+      </button>
 
-Atrás está escrito:
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-"Primeiro hospedeiro compatível."
+    </section>
 
-Você percebe que o experimento já aconteceu antes.
 
-</p>
+    <!-- ========================================
+         PASSO 25
+         ======================================== -->
 
-<button class="btn-proximo" data-proximo="25">
-📖 Descobrir a verdade
-</button>
+    <section
+      class="passo"
+      id="passo-25"
+    >
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <img
+        src="imagenbs/arquivo.jpg"
+        alt="Último registro"
+      >
 
-</section>
+      <h2>
+        O Último Registro
+      </h2>
 
-<!-- ======================
-ORIGEM DO SINAL
-====================== -->
+      <p>
+        A gravação revela a verdade.
 
-<section class="passo" id="passo-24">
+        O simbionte não era uma arma.
 
-<img src="imagenbs/portal.jpg">
+        Era uma forma de vida.
 
-<h2>
-A Origem
-</h2>
+        Os cientistas tentaram controlar algo
+        que não entendiam.
 
-<p>
+        A última frase do pesquisador diz:
 
-O sinal vem de uma estrutura escondida.
+        "Ele não precisa de um dono."
 
-Um portal.
+        "Ele precisa de alguém que escolha ficar."
+      </p>
 
-Ele parece uma mistura de tecnologia
-com algo vivo.
+      <button
+        class="btn-proximo"
+        data-proximo="21"
+      >
+        🖤 Voltar ao tanque
+      </button>
 
-O laboratório não criou o simbionte.
+      <button
+        class="btn-proximo"
+        data-proximo="30"
+      >
+        🌀 Procurar o portal
+      </button>
 
-Apenas encontrou uma passagem.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-</p>
+    </section>
 
-<button class="btn-proximo" data-proximo="30">
-🌀 Abrir o portal
-</button>
 
-<button class="btn-proximo" data-proximo="15">
-🧪 Voltar ao laboratório
-</button>
+    <!-- ========================================
+         PASSO 26
+         ======================================== -->
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    <section
+      class="passo"
+      id="passo-26"
+    >
 
-</section>
+      <img
+        src="imagenbs/venom.jpg"
+        class="enquadramento-bem-alto"
+        alt="Novos poderes"
+      >
 
-<!-- ======================
-ÚLTIMO REGISTRO
-====================== -->
+      <h2>
+        Novos Poderes
+      </h2>
 
-<section class="passo" id="passo-25">
+      <p>
+        Agora você consegue sentir o ambiente.
 
-<img src="imagenbs/arquivo.jpg">
+        Escutar pensamentos.
 
-<h2>
-O Último Registro
-</h2>
+        Mover o simbionte pelo corpo.
 
-<p>
+        Mas existe um problema...
 
-A gravação revela a verdade.
+        Ele também sente suas emoções.
+      </p>
 
-O simbionte não era uma arma.
+      <button
+        class="btn-proximo"
+        data-proximo="31"
+      >
+        🕷️ Usar os poderes para proteger
+      </button>
 
-Era uma forma de vida.
+      <button
+        class="btn-proximo"
+        data-proximo="32"
+      >
+        🖤 Deixar o simbionte assumir
+      </button>
 
-Os cientistas tentaram controlar algo
-que não entendiam.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-A última frase do pesquisador diz:
+    </section>
 
-"Ele não precisa de um dono."
 
-"Ele precisa de alguém que escolha ficar."
+    <!-- ========================================
+         PASSO 27
+         ======================================== -->
 
-</p>
+    <section
+      class="passo"
+      id="passo-27"
+    >
 
-<button class="btn-proximo" data-proximo="21">
-🖤 Voltar ao tanque
-</button>
+      <img
+        src="imagenbs/simbionte.jpg"
+        class="enquadramento-bem-alto"
+        alt="Simbionte"
+      >
 
-<button class="btn-proximo" data-proximo="30">
-🌀 Procurar o portal
-</button>
+      <h2>
+        Dois em Um
+      </h2>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+      <p>
+        Você tenta conversar com ele.
 
-</section>
+        Ao invés de lutar,
+        vocês chegam a um acordo.
 
-<!-- ======================
-NOVOS PODERES
-====================== -->
+        Pela primeira vez,
+        o simbionte confia em alguém.
+      </p>
 
-<section class="passo" id="passo-26">
+      <button
+        class="btn-proximo"
+        data-proximo="31"
+      >
+        🤝 Criar uma aliança
+      </button>
 
-<img src="imagenbs/venom.jpg">
+      <button
+        class="btn-proximo"
+        data-proximo="32"
+      >
+        ⚫ Entregar o controle
+      </button>
 
-<h2>
-Novos Poderes
-</h2>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<p>
+    </section>
 
-Agora você consegue sentir o ambiente.
 
-Escutar pensamentos.
+    <!-- ========================================
+         PASSO 28
+         ======================================== -->
 
-Mover o simbionte pelo corpo.
+    <section
+      class="passo"
+      id="passo-28"
+    >
 
-Mas existe um problema...
+      <img
+        src="imagenbs/computador.jpg"
+        alt="Erro final"
+      >
 
-Ele também sente suas emoções.
+      <h2>
+        O Erro Final
+      </h2>
 
-</p>
+      <p>
+        Você fecha o tanque.
 
-<button class="btn-proximo" data-proximo="31">
-🕷️ Usar os poderes para proteger
-</button>
+        Mas o sistema entra em emergência.
 
-<button class="btn-proximo" data-proximo="32">
-🖤 Deixar o simbionte assumir
-</button>
+        Uma mensagem aparece:
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        "VOCÊ ERA A ÚLTIMA CHANCE."
 
-</section>
+        As luzes se apagam.
+      </p>
 
-<!-- ======================
-CONTROLE
-====================== -->
+      <button
+        class="btn-proximo"
+        data-proximo="33"
+      >
+        🚪 Fugir do laboratório
+      </button>
 
-<section class="passo" id="passo-27">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<img src="imagenbs/simbionte.jpg">
+    </section>
 
-<h2>
-Dois em Um
-</h2>
 
-<p>
+    <!-- ========================================
+         PASSO 29
+         ======================================== -->
 
-Você tenta conversar com ele.
+    <section
+      class="passo"
+      id="passo-29"
+    >
 
-Ao invés de lutar,
-vocês chegam a um acordo.
+      <img
+        src="imagenbs/computador.jpg"
+        alt="Arquivos liberados"
+      >
 
-Pela primeira vez,
-o simbionte confia em alguém.
+      <h2>
+        Todos os Arquivos
+      </h2>
 
-</p>
+      <p>
+        Milhares de informações aparecem.
 
-<button class="btn-proximo" data-proximo="31">
-🤝 Criar uma aliança
-</button>
+        Experimentos.
 
-<button class="btn-proximo" data-proximo="32">
-⚫ Entregar o controle
-</button>
+        Tentativas.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        Falhas.
 
-</section>
+        Até que um arquivo chama atenção:
 
-<!-- ======================
-FECHAR TANQUE
-====================== -->
+        "PROJETO HOSPEDEIRO PERFEITO."
+      </p>
 
-<section class="passo" id="passo-28">
+      <button
+        class="btn-proximo"
+        data-proximo="25"
+      >
+        📖 Ler o arquivo
+      </button>
 
-<img src="imagenbs/erro.jpg">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<h2>
-O Erro Final
-</h2>
+    </section>
 
-<p>
 
-Você fecha o tanque.
+    <!-- ========================================
+         PASSO 30
+         ======================================== -->
 
-Mas o sistema entra em emergência.
+    <section
+      class="passo"
+      id="passo-30"
+    >
 
-Uma mensagem aparece:
+      <img
+        src="imagenbs/fragmento.jpg"
+        alt="Portal"
+      >
 
-"VOCÊ ERA A ÚLTIMA CHANCE."
+      <h2>
+        O Portal
+      </h2>
 
-As luzes se apagam.
+      <p>
+        A estrutura começa a funcionar.
 
-</p>
+        Do outro lado existe um lugar desconhecido.
 
-<button class="btn-proximo" data-proximo="33">
-🚪 Fugir do laboratório
-</button>
+        A origem do simbionte.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        Antes de atravessar,
+        você ouve uma última pergunta:
 
-</section>
+        "Você quer descobrir de onde viemos?"
+      </p>
 
-<!-- ======================
-ARQUIVOS LIBERADOS
-====================== -->
+      <button
+        class="btn-proximo"
+        data-proximo="34"
+      >
+        🌀 Entrar no portal
+      </button>
 
-<section class="passo" id="passo-29">
+      <button
+        class="btn-proximo"
+        data-proximo="35"
+      >
+        🚪 Fechar o portal
+      </button>
 
-<img src="imagenbs/computador.jpg">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<h2>
-Todos os Arquivos
-</h2>
+    </section>
 
-<p>
 
-Milhares de informações aparecem.
+    <!-- ========================================
+         PASSO 31 - FINAL BOM
+         ======================================== -->
 
-Experimentos.
+    <section
+      class="passo"
+      id="passo-31"
+    >
 
-Tentativas.
+      <img
+        src="imagenbs/venom.jpg"
+        class="enquadramento-bem-alto"
+        alt="Guardião simbionte"
+      >
 
-Falhas.
+      <h2>
+        Final: O Guardião
+      </h2>
 
-Até que um arquivo chama atenção:
+      <p>
+        Você e o simbionte aprendem a existir juntos.
 
-"PROJETO HOSPEDEIRO PERFEITO."
+        Não existe controle.
 
-</p>
+        Não existe medo.
 
-<button class="btn-proximo" data-proximo="25">
-📖 Ler o arquivo
-</button>
+        Apenas uma parceria.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        O mundo nunca saberá seu segredo.
 
-</section>
+        Mas quando precisar...
 
-<!-- ======================
-PORTAL
-====================== -->
+        vocês estarão lá.
+      </p>
 
-<section class="passo" id="passo-30">
+      <h3>
+        🖤 FIM - A UNIÃO PERFEITA
+      </h3>
 
-<img src="imagenbs/portal.jpg">
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<h2>
-O Portal
-</h2>
+    </section>
 
-<p>
 
-A estrutura começa a funcionar.
+    <!-- ========================================
+         PASSO 32 - FINAL RUIM
+         ======================================== -->
 
-Do outro lado existe um lugar desconhecido.
+    <section
+      class="passo"
+      id="passo-32"
+    >
 
-A origem do simbionte.
+      <img
+        src="imagenbs/simbionte.jpg"
+        class="enquadramento-bem-alto"
+        alt="Simbionte"
+      >
 
-Antes de atravessar,
-você ouve uma última pergunta:
+      <h2>
+        Final: Consumido
+      </h2>
 
-"Você quer descobrir de onde viemos?"
+      <p>
+        O poder era grande demais.
 
-</p>
+        O simbionte assumiu completamente.
 
-<button class="btn-proximo" data-proximo="34">
-🌀 Entrar no portal
-</button>
+        Você ainda está lá...
 
-<button class="btn-proximo" data-proximo="35">
-🚪 Fechar o portal
-</button>
+        Mas agora apenas observa.
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+        Uma nova criatura nasceu.
+      </p>
 
-</section>
+      <h3>
+        ⚫ FIM - O SIMBIONTE VENCEU
+      </h3>
 
-<!-- ======================
-HERÓI
-====================== -->
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<section class="passo" id="passo-31">
+    </section>
 
-<img src="imagenbs/final.jpg">
 
-<h2>
-Final: O Guardião
-</h2>
+    <!-- ========================================
+         PASSO 33
+         ======================================== -->
 
-<p>
+    <section
+      class="passo"
+      id="passo-33"
+    >
 
-Você e o simbionte aprendem a existir juntos.
+      <img
+        src="imagenbs/cidade.jpg"
+        alt="Cidade"
+      >
 
-Não existe controle.
+      <h2>
+        Final: O Sobrevivente
+      </h2>
 
-Não existe medo.
+      <p>
+        Você deixa tudo para trás.
 
-Apenas uma parceria.
+        Mas sabe que aquilo ainda existe.
 
-O mundo nunca saberá seu segredo.
+        Em algum lugar.
 
-Mas quando precisar...
+        Esperando outro encontro.
+      </p>
 
-vocês estarão lá.
+      <h3>
+        🌑 FIM - A SOMBRA CONTINUA
+      </h3>
 
-</p>
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-<h3>
-🖤 FIM - A UNIÃO PERFEITA
-</h3>
+    </section>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
 
-</section>
+    <!-- ========================================
+         PASSO 34
+         ======================================== -->
 
-<!-- ======================
-FINAL RUIM
-====================== -->
+    <section
+      class="passo"
+      id="passo-34"
+    >
 
-<section class="passo" id="passo-32">
+      <img
+        src="imagenbs/fotosegredo.jpg"
+        class="enquadramento-alto"
+        alt="Origem verdadeira"
+      >
 
-<img src="imagenbs/criatura.jpg">
+      <h2>
+        A Origem Verdadeira
+      </h2>
 
-<h2>
-Final: Consumido
-</h2>
+      <p>
+        Do outro lado do portal,
+        você descobre algo impossível.
 
-<p>
+        Existem outros simbiontes.
 
-O poder era grande demais.
+        Outras histórias.
 
-O simbionte assumiu completamente.
+        Outros mundos.
 
-Você ainda está lá...
+        Mas apenas um escolheu você.
+      </p>
 
-Mas agora apenas observa.
+      <button
+        class="btn-proximo"
+        data-proximo="36"
+      >
+        🖤 Aceitar seu destino
+      </button>
 
-Uma nova criatura nasceu.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-</p>
+    </section>
 
-<h3>
-⚫ FIM - O SIMBIONTE VENCEU
-</h3>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    <!-- ========================================
+         PASSO 35
+         ======================================== -->
 
-</section>
+    <section
+      class="passo"
+      id="passo-35"
+    >
 
-<!-- ======================
-FUGA
-====================== -->
+      <img
+        src="imagenbs/fragmento.jpg"
+        alt="Portal fechado"
+      >
 
-<section class="passo" id="passo-33">
+      <h2>
+        O Segredo Perdido
+      </h2>
 
-<img src="imagenbs/cidade.jpg">
+      <p>
+        Você fecha o portal.
 
-<h2>
-Final: O Sobrevivente
-</h2>
+        Ninguém jamais saberá o que estava ali.
 
-<p>
+        Mas antes de ir embora,
+        ouve uma última frase:
 
-Você deixa tudo para trás.
+        "Nós ainda estamos aqui."
+      </p>
 
-Mas sabe que aquilo ainda existe.
+      <h3>
+        🌀 FIM - O MISTÉRIO CONTINUA
+      </h3>
 
-Em algum lugar.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-Esperando outro encontro.
+    </section>
 
-</p>
 
-<h3>
-🌑 FIM - A SOMBRA CONTINUA
-</h3>
+    <!-- ========================================
+         PASSO 36 - FINAL VERDADEIRO
+         ======================================== -->
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+    <section
+      class="passo"
+      id="passo-36"
+    >
 
-</section>
+      <img
+        src="imagenbs/venom.jpg"
+        class="enquadramento-bem-alto"
+        alt="Final verdadeiro"
+      >
 
-<!-- ======================
-ORIGEM
-====================== -->
+      <h2>
+        FINAL SECRETO
+      </h2>
 
-<section class="passo" id="passo-34">
+      <p>
+        Você descobriu toda a verdade.
 
-<img src="imagenbs/segredo.jpg">
+        Você não encontrou um monstro.
 
-<h2>
-A Origem Verdadeira
-</h2>
+        Encontrou alguém perdido.
 
-<p>
+        O simbionte finalmente encontrou um lar.
+        
+      </p>
 
-Do outro lado do portal,
-você descobre algo impossível.
+      <h1>
+        🖤
+        <br>
+        NÓS...
+        <br>
+        NÓS SOMOS UM.
+      </h1>
 
-Existem outros simbiontes.
+      <h3>
+        🕷️ FINAL VERDADEIRO - SIMBIOSE PERFEITA
+      </h3>
 
-Outras histórias.
+      <button class="btn-inicio">
+        🔄 Jogar novamente
+      </button>
 
-Outros mundos.
+    </section>
 
-Mas apenas um escolheu você.
 
-</p>
+  </main>
 
-<button class="btn-proximo" data-proximo="36">
-🖤 Aceitar seu destino
-</button>
 
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
+  <!-- ==========================================
+       JAVASCRIPT
+       ========================================== -->
 
-</section>
-
-<!-- ======================
-FECHAR PORTAL
-====================== -->
-
-<section class="passo" id="passo-35">
-
-<img src="imagenbs/portal.jpg">
-
-<h2>
-O Segredo Perdido
-</h2>
-
-<p>
-
-Você fecha o portal.
-
-Ninguém jamais saberá o que estava ali.
-
-Mas antes de ir embora,
-ouve uma última frase:
-
-"Nós ainda estamos aqui."
-
-</p>
-
-<h3>
-🌀 FIM - O MISTÉRIO CONTINUA
-</h3>
-
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
-
-</section>
-
-<!-- ======================
-FINAL SECRETO VENOM
-====================== -->
-
-<section class="passo" id="passo-36">
-
-<img src="imagenbs/final.jpg">
-
-<h2>
-FINAL SECRETO
-</h2>
-
-<p>
-
-Você descobriu toda a verdade.
-
-Você não encontrou um monstro.
-
-Encontrou alguém perdido.
-
-O simbionte finalmente encontrou um lar.
-
-A tela fica preta...
-
-</p>
-
-<h1>
-🖤
-<br>
-NÓS...
-<br>
-NÓS SOMOS UM.
-</h1>
-
-<h3>
-🕷️ FINAL VERDADEIRO - SIMBIOSE PERFEITA
-</h3>
-
-<button class="btn-inicio">
-🔄 Jogar novamente
-</button>
-
-</section>
-
-</main>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
